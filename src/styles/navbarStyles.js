@@ -5,7 +5,7 @@ export const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 23px 0;
+    padding: 23px 0 0 0;
 `;
 
 export const Logo = styled.div`
@@ -106,21 +106,22 @@ export const Bar = styled.span`
 
 export const ToogleItems = styled.ul`
     display: ${({open}) => open ? ' block' : 'none'};
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 60px;
-    bottom: 0;
+    bottom: -20px;
     padding: 50px 20px;
     list-style: none;
     background-color: #FBFBFB;
-    z-index: 200;
+    z-index: 1000;
     @media(min-width: 768px){
         position: relative;
         display: flex;
         align-items: center;
         margin: 0  0 0 56px;
         top: unset;
+        bottom: unset;
         padding: 0;
         background-color: transparent;
         &::before{

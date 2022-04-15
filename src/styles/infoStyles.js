@@ -9,15 +9,15 @@ export const InfoContainer = styled.article`
         font-size: 50px;
         line-height: 42px;
         text-align: center;
-        margin: 30px 0 0 0;
+        margin: 45px 0 0 0;
     }
     & p{
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 28px;
         color: #888E8F;
-        margin: 29px 0;
+        margin: 15px 0;
     }
     @media(min-width: 768px){
         grid-template-columns: 0.6fr 0.4fr;
@@ -26,6 +26,10 @@ export const InfoContainer = styled.article`
             padding-right: 50px;
             line-height: 62px;
             text-align: left;
+        }
+        & p{
+            font-size: 24px;
+            margin: 29px 0;
         }
     }
     @media(min-width: 991px){
@@ -47,28 +51,39 @@ export const Column = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 30px 0;
+    &:nth-of-type(2){
+        position: relative;
+    }
     @media(min-width: 768px){
+        padding: 50px 0;
         align-items: flex-start;
+        &:nth-of-type(2){
+            position: static;
+        }
     }
 `;
 
 export const FarmImage = styled.div`
-    display: none;
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    max-height: 640px;
-    max-width: 770px;
-    width: 40%;
-    border-radius: 0 0 0 100px;
-    background-image: url("/field.svg");
+    right: -10px;
+    left: -10px;
+    height: 300px;
+    top: 50%;
+    border-radius: 50px 50px 0 0;
+    background-image: url("/field.jpeg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
     @media(min-width: 768px){
-        display: block;
+        right: 0;
+        top: 0;
+        left: unset;
+        height: 100%;
+        max-height: 640px;
+        max-width: 770px;
+        width: 40%;
+        border-radius: 0 0 0 100px;
     }
     @media(min-width: 991px){
         & {
@@ -84,17 +99,19 @@ export const FarmImage = styled.div`
 
 export const HarvestProjects = styled.div`
     position: relative;
-    width: 320px;
-    height: 370px;
+    width: 250px;
+    height: 315px;
     background: #FFFFFF;
     box-shadow: 0px 104px 224px rgba(0, 0, 0, 0.05);
     border-radius: 90px 40px;
+    z-index: 1;
     @media(min-width: 768px){
         position: absolute;
+        width: 320px;
+        height: 370px;
         left: -50px;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 10;
     }
 `;
 
@@ -107,13 +124,21 @@ export const HarvestProject = styled.div`
     box-shadow: 2px 4px 10px rgba(24, 24, 24, 0.1);
     border-radius: 27px;
     padding: 10px 12px;
+    font-size: 11px;
+    @media(min-width: 768px){
+        font-size: 15px;
+    }
 `;
 
 export const Icon = styled.div`
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     margin-right: 5px;
+    @media(min-width: 768px){
+        width: 26px;
+        height: 26px;  
+    }
 `;
 
 export const HarvestCircle = styled.div`

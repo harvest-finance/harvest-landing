@@ -5,6 +5,8 @@ import Link from 'next/link'
 function ToogleNav(){
     const [open, setOpen] = useState(false);
     const toogle = () => {
+        if (open) document.body.style.overflow = '';
+        else document.body.style.overflow = 'hidden';
         setOpen(!open);
     }
     return(
