@@ -72,9 +72,9 @@ export const FarmImage = styled.div`
     top: 50%;
     border-radius: 50px 50px 0 0;
     background-image: url("/field.jpeg");
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media(min-width: 768px){
         right: 0;
         top: 0;
@@ -92,7 +92,7 @@ export const FarmImage = styled.div`
     }
     @media(min-width: 1100px){
         & {
-            max-height: 770px;
+            max-height: 750px;
         }
     }
 `;
@@ -107,11 +107,15 @@ export const HarvestProjects = styled.div`
     z-index: 1;
     @media(min-width: 768px){
         position: absolute;
-        width: 320px;
-        height: 370px;
+        width: 290px;
+        height: 350px;
         left: -50px;
         top: 50%;
         transform: translateY(-50%);
+    }
+    @media(min-width: 991px){
+        width: 320px;
+        height: 370px;
     }
 `;
 
@@ -125,8 +129,13 @@ export const HarvestProject = styled.div`
     border-radius: 27px;
     padding: 10px 12px;
     font-size: 11px;
+    cursor: default;
     @media(min-width: 768px){
         font-size: 15px;
+        &:hover{
+            transform: scale(1.07);
+            transition: transform 0.2s ease-in-out;
+        }
     }
 `;
 
@@ -137,7 +146,7 @@ export const Icon = styled.div`
     margin-right: 5px;
     @media(min-width: 768px){
         width: 26px;
-        height: 26px;  
+        height: 26px;
     }
 `;
 

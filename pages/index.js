@@ -15,7 +15,7 @@ export default function Home() {
       <Nav/>
       <main>
         <Info/>
-        {/* <Services/> */}
+        <Services/>
       </main>
       <footer>
       </footer>

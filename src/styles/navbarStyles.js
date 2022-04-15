@@ -110,7 +110,7 @@ export const ToogleItems = styled.ul`
     left: 0;
     right: 0;
     top: 60px;
-    bottom: -20px;
+    bottom: -100px;
     padding: 50px 20px;
     list-style: none;
     background-color: #FBFBFB;
