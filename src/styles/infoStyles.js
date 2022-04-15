@@ -9,7 +9,7 @@ export const InfoContainer = styled.article`
         font-size: 50px;
         line-height: 42px;
         text-align: center;
-        margin: 30px 0;
+        margin: 30px 0 0 0;
     }
     & p{
         font-style: normal;
@@ -17,6 +17,7 @@ export const InfoContainer = styled.article`
         font-size: 24px;
         line-height: 28px;
         color: #888E8F;
+        margin: 29px 0;
     }
     @media(min-width: 768px){
         grid-template-columns: 0.6fr 0.4fr;
@@ -81,7 +82,7 @@ export const FarmImage = styled.div`
     }
 `;
 
-export const HarvestOffers = styled.div`
+export const HarvestProjects = styled.div`
     position: relative;
     width: 320px;
     height: 370px;
@@ -97,7 +98,7 @@ export const HarvestOffers = styled.div`
     }
 `;
 
-export const HarvestOffer = styled.div`
+export const HarvestProject = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
@@ -106,6 +107,13 @@ export const HarvestOffer = styled.div`
     box-shadow: 2px 4px 10px rgba(24, 24, 24, 0.1);
     border-radius: 27px;
     padding: 10px 12px;
+`;
+
+export const Icon = styled.div`
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    margin-right: 5px;
 `;
 
 export const HarvestCircle = styled.div`
@@ -123,12 +131,36 @@ export const HarvestCircle = styled.div`
     transform: translate(-50%, -50%);
 `;
 
+export const Money = styled.div`
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 98px;
+    height: 98px;
+    background: #FFFFFF;
+    box-shadow: 1.69856px 3.39713px 8.49282px rgba(24, 24, 24, 0.1);
+    border-radius: 50%;
+`;
+
+export const MoneyImg = styled.div`
+    width: 83px;
+    height: 83px;
+    background: #E5EEED;
+    border-radius: 50%;
+`;
+
 export const Button = styled.span`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 24px;
     width: 260px;
     height: 70px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #FCDC67 0%, #EDAE50 100%);
     border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
 `;
