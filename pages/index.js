@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Nav from '../src/components/navbar/Nav'
 import Info from '../src/components/Info'
 import Services from '../src/components/Services'
-import Image from 'next/image'
+import Earn from '../src/components/Earn'
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <main>
         <Info/>
         <Services/>
+        <Earn/>
       </main>
       <footer>
       </footer>

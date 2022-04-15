@@ -113,7 +113,7 @@ export const ToogleItems = styled.ul`
     bottom: -100px;
     padding: 50px 20px;
     list-style: none;
-    background-color: #FBFBFB;
+    background-color: white;
     z-index: 1000;
     @media(min-width: 768px){
         position: relative;

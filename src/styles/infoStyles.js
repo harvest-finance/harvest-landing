@@ -11,14 +11,6 @@ export const InfoContainer = styled.article`
         text-align: center;
         margin: 45px 0 0 0;
     }
-    & p{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
-        color: #888E8F;
-        margin: 15px 0;
-    }
     @media(min-width: 768px){
         grid-template-columns: 0.6fr 0.4fr;
         & h1{
@@ -26,10 +18,6 @@ export const InfoContainer = styled.article`
             padding-right: 50px;
             line-height: 62px;
             text-align: left;
-        }
-        & p{
-            font-size: 24px;
-            margin: 29px 0;
         }
     }
     @media(min-width: 991px){
@@ -43,6 +31,21 @@ export const InfoContainer = styled.article`
             font-size: 90px;
             line-height: 82px;
         }
+    }
+`;
+
+export const InfoText = styled.span`
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #888E8F;
+    margin: 15px 0;
+    padding: 0;
+    @media(min-width: 768px){
+        font-size: 24px;
+        margin: 29px 0;
     }
 `;
 

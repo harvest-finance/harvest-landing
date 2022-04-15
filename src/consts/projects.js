@@ -3,7 +3,7 @@ const projects = [
         name: 'Compound',
         imgUrl: 'compound.png',
         imgDimensions: {width: 16, height: 17},
-        background: {backgroundColor: ' rgba(0, 211, 149, 0.13);'},
+        background: {backgroundColor: ' rgba(0, 211, 149, 0.13)'},
         position: {left: '-30px', top: '70%'}
     },
     {
@@ -52,7 +52,7 @@ const projects = [
         name: 'Kyber',
         imgUrl: 'kyber.png',
         imgDimensions: {width: 16, height: 16},
-        background: {backgroundColor: 'rgba(68, 202, 145, 0.22);'},
+        background: {backgroundColor: 'rgba(68, 202, 145, 0.22)'},
         position: {right: '-30px', top: '70%'}
     }
 ]

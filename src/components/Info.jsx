@@ -1,4 +1,4 @@
-import {Column, FarmImage, HarvestProjects, InfoContainer, Button, HarvestCircle, HarvestProject, Icon, Money, MoneyImg} from '../styles/infoStyles'
+import {Column, FarmImage, HarvestProjects, InfoText, InfoContainer, Button, HarvestCircle, HarvestProject, Icon, Money, MoneyImg} from '../styles/infoStyles'
 import Image from 'next/image'
 import projects from '../consts/projects'
 import Link from 'next/link'
@@ -10,8 +10,8 @@ function Info(){
                 <h1>
                     EARN YIELD ON YOUR CRYPTO
                 </h1>
-                <p>Put your idle assets to work.</p>
-                <Link href="/"> 
+                <InfoText>Put your idle assets to work.</InfoText>
+                <Link href="/">
                     <a>
                         <Button>
                             START EARNING
@@ -29,10 +29,10 @@ function Info(){
                                 <span>Harvest</span>
                             </HarvestCircle>
                             {
-                                projects.map(({name, imgUrl, imgDimensions, background, position}) => 
+                                projects.map(({name, imgUrl, imgDimensions, background, position}) =>
                                     <HarvestProject key={name} style={position}>
                                         <Icon className='centerFlex' style={background}>
-                                            <Image src={`/projects/${imgUrl}`} {...imgDimensions} />
+                                            <Image src={`/projects/${imgUrl}`} {...imgDimensions} alt={name}/>
                                         </Icon>
                                         {name}
                                     </HarvestProject>
