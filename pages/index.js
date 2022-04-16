@@ -4,6 +4,7 @@ import Info from '../src/components/Info'
 import Services from '../src/components/Services'
 import Earn from '../src/components/Earn'
 import Video from '../src/components/Video'
+import Ecosystem from '../src/components/Ecosystem'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Services/>
         <Earn/>
         <Video/>
+        <Ecosystem/>
       </main>
       <footer>
       </footer>

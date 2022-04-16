@@ -192,12 +192,16 @@ export const Button = styled.span`
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-    width: 260px;
-    height: 70px;
+    width: 200px;
+    height: 55px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #FCDC67 0%, #EDAE50 100%);
     border-radius: 10px;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    @media(min-width: 768px){
+        width: 260px;
+        height: 70px;
+    }
 `;

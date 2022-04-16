@@ -3,7 +3,7 @@ import {InfoText} from '../styles/infoStyles'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 
-function Earn(){
+export default function Earn(){
     const { ref, inView } = useInView({
         threshold: 0.8,
         triggerOnce: true
@@ -71,5 +71,3 @@ function Earn(){
         </Container>
     )
 }
-
-export default Earn;

@@ -1,0 +1,36 @@
+import {Container, TextColumn, PlatformsColumn, Box, Title, Icon, EarningButton} from '../styles/ecosystemStyles'
+import {InfoText} from '../styles/infoStyles'
+import Link from 'next/link'
+import Image from 'next/image'
+import trustedPlatforms from '../consts/trusted_platforms'
+
+export default function Ecosystem(){
+    return(
+        <Container>
+            <TextColumn>
+                <Title> HARVEST ECOSYSTEM </Title>
+                <InfoText> 30+ Trusted Platforms </InfoText>
+                <Link href="/">
+                    <a>
+                        <EarningButton>
+                            START EARNING
+                            <Image src="/arrow_right.png" width={13} height={13} />
+                        </EarningButton>
+                    </a>
+                </Link>
+            </TextColumn>
+            <PlatformsColumn>
+                {
+                    trustedPlatforms.map(({name, imgUrl, attr}) =>
+                        <Box {...attr}>
+                            <Icon>
+                                <Image src={`/trusted_projects/${imgUrl}`} width={74} height={74} />
+                            </Icon>
+                            <p>{name}</p>
+                        </Box>
+                    )
+                }
+            </PlatformsColumn>
+        </Container>
+    )
+}

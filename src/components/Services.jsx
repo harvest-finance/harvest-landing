@@ -44,7 +44,7 @@ const Service = styled.div`
     }
 `;
 
-function Services(){
+export default function Services(){
     return(
         <Container>
             <Service className='centerFlex'>
@@ -66,5 +66,3 @@ function Services(){
         </Container>
     )
 }
-
-export default Services;

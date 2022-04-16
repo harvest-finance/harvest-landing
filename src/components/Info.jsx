@@ -3,7 +3,7 @@ import Image from 'next/image'
 import projects from '../consts/projects'
 import Link from 'next/link'
 
-function Info(){
+export default function Info(){
     return(
         <InfoContainer>
             <Column>
@@ -51,5 +51,3 @@ function Info(){
         </InfoContainer>
     )
 }
-
-export default Info;

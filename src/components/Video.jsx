@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
-import {Container, Frame, PosterImage, PlayButton, IframeContainer} from '../styles/Video'
+import {Container, Frame, PosterImage, PlayButton, IframeContainer, Effect} from '../styles/videoStyles'
 import Image from 'next/image'
 
-function Video(){
+export default function Video(){
     const [play, setPlay] = useState(false);
     const playVideo = () => {
         if(!play){
@@ -17,7 +17,9 @@ function Video(){
                         <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center"/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
-                        <Image src="/play.png" width={78} height={78} />
+                        <Effect className='relativeContainer'>
+                            <Image src="/play.png" width={78} height={78} />
+                        </Effect>
                     </PlayButton>
                     <iframe
                         width="100%"
@@ -31,5 +33,3 @@ function Video(){
         </Container>
     )
 }
-
-export default Video;
