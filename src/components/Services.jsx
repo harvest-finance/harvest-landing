@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
+import {DefaultService} from '../styles/auditedStyles'
 
 const Container = styled.div`
     display: flex;
@@ -14,21 +15,23 @@ const Container = styled.div`
 `;
 
 const Service = styled.div`
-    background: #F6F6F6;
     border-radius: 18px;
     width: 72px;
     height: 72px;
+    background: #F6F6F6;
+    filter: none;
     cursor: default;
     & p{
         display: none;
     }
     @media(min-width: 768px){
-        filter: invert(92%) sepia(6%) saturate(126%) hue-rotate(142deg) brightness(89%) contrast(85%);
-        background: transparent;
         width: auto;
         height: auto;
+        background: transparent;
+        filter: invert(92%) sepia(6%) saturate(126%) hue-rotate(142deg) brightness(89%) contrast(85%);
+        max-width: unset;
         &:hover{
-            filter: none;
+            filter: grayscale(1);
         }
         & p{
             display: block;

@@ -13,6 +13,7 @@ export const Container = styled.article`
     @media(min-width: 768px){
         margin: 100px 0;
         grid-template-columns: 310px 1fr;
+        padding-bottom: 0;
     }
 `;
 

@@ -21,8 +21,8 @@ export default function Ecosystem(){
             </TextColumn>
             <PlatformsColumn>
                 {
-                    trustedPlatforms.map(({name, imgUrl, attr}) =>
-                        <Box {...attr} key={name}>
+                    trustedPlatforms.map(({name, imgUrl, attr}, i) =>
+                        <Box {...attr} key={`${name}.${i}`}>
                             <Icon>
                                 <Image src={`/trusted_projects/${imgUrl}`} width={74} height={74} alt={name}/>
                             </Icon>
