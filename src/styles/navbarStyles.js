@@ -57,6 +57,7 @@ export const TooglerButton = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     cursor: pointer;
+    user-select: none;
     @media(min-width: 768px){
         display: none;
     }

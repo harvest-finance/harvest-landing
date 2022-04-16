@@ -1,4 +1,4 @@
-import {Container, Title, InfoPart, List, ListItem, Icon, BarsContainer, BarsBg, BarsLegend, Circle, Bars, Bar, Column, Fill} from '../styles/earnStyles'
+import {Container, Title, InfoPart, List, ListItem, Icon, BarsContainer, BarsBg, BarsLegend, Circle, Bars, Bar, Column, Fill, Apy} from '../styles/earnStyles'
 import {InfoText} from '../styles/infoStyles'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
@@ -21,15 +21,15 @@ function Earn(){
                 </BarsLegend>
                 <Bars>
                     <Column>
-                        <Bar><Fill height={inView ? 180 : 0}/></Bar>
+                        <Bar><Apy>APY</Apy><Fill height={inView ? 0.7 : 0}/></Bar>
                         <p className='centerFlex'>Liquidity Provision</p>
                     </Column>
                     <Column>
-                        <Bar style={{height: '320px'}}><Fill height={inView ? 240 : 0} style={{transitionDelay: '0.2s'}}/></Bar>
+                        <Bar top><Apy>APY</Apy><Fill top height={inView ? 0.9 : 0} style={{transitionDelay: '0.2s'}}/></Bar>
                         <p className='centerFlex'>Lending</p>
                     </Column>
                     <Column>
-                        <Bar><Fill height={inView ? 180 : 0} style={{transitionDelay: '0.4s'}}/></Bar>
+                        <Bar><Apy>APY</Apy><Fill height={inView ? 0.7 : 0} style={{transitionDelay: '0.4s'}}/></Bar>
                         <p className='centerFlex'>Staking</p>
                     </Column>
                 </Bars>

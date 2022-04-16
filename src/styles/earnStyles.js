@@ -2,19 +2,34 @@ import styled from 'styled-components';
 
 export const Container = styled.article`
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
     margin: 82px 0;
+    align-items: center;
+    justify-items: center;
+    @media(min-width: 768px){
+        grid-template-columns: 0.5fr 0.5fr;
+        justify-items: flex-start;
+    }
 `;
 
 export const InfoPart = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    order: -1;
+    font-size: 16px;
+    @media(min-width: 768px){
+        order: 1;
+        font-size: 20px;
+    }
+    @media(min-width: 991px){
+        font-size: 24px;
+    }
 `;
 
 export const Title = styled.h2`
     font-weight: 700;
-    font-size: 50px;
+    font-size: 2em;
     margin: 0;
     padding: 0;
 `;
@@ -29,7 +44,7 @@ export const ListItem = styled.li`
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1em;
     line-height: 28px;
     margin-top: 16px;
 `;
@@ -44,12 +59,20 @@ export const Icon = styled.div`
 
 export const BarsContainer = styled.div`
     position: relative;
-    width: 460px;
-    height: 500px;
+    width: 340px;
+    height: 400px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #FCDC67 0%, #EDAE50 100%);
     border-radius: 20px;
     padding: 20px 30px;
     z-index: 10;
+    margin-top: 40px;
+    @media(min-width: 768px){
+        margin-top: 0;
+    }
+    @media(min-width: 992px){
+        width: 460px;
+        height: 500px;
+    }
 `;
 
 export const BarsBg = styled.div`
@@ -79,11 +102,14 @@ export const Bars = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     & p{
         height: 40px;
         width: auto;
         text-align: center;
+    }
+    @media(min-width: 768px){
+        margin-top: 50px;
     }
 `;
 
@@ -98,10 +124,15 @@ export const Column = styled.div`
 export const Bar = styled.div`
     position: relative;
     background-color: white;
-    width: 70px;
-    height: 270px;
+    width: 60px;
+    height: ${({top}) => top ? 240 : 200}px;
     border-radius: 20px;
     overflow: hidden;
+    @media(min-width: 992px){
+        width: 70px;
+        height: 270px;
+        height: ${({top}) => top ? 320 : 270}px;
+    }
 `;
 
 export const Fill = styled.div`
@@ -109,10 +140,26 @@ export const Fill = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    height: ${({height}) => height}px;
+    height: ${({height}) => height * 200}px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #2D2D2D 0%, #000000 100%);
     border-radius: 20px;
     transition: height 1s ease-in-out;
+    @media(min-width: 992px){
+        height: ${({height}) => height * 270}px;
+    }
+`;
+
+export const Apy = styled.span`
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    z-index: 20;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #888E8F;
 `;
 
 export const Circle = styled.div`
