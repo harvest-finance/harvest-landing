@@ -6,6 +6,7 @@ import Earn from '../src/components/Earn'
 import Video from '../src/components/Video'
 import Ecosystem from '../src/components/Ecosystem'
 import Audited from '../src/components/Audited'
+import FarmBoxes from '../src/components/FarmBoxes'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Video/>
         <Ecosystem/>
         <Audited/>
+        <FarmBoxes/>
       </main>
       <footer>
       </footer>
