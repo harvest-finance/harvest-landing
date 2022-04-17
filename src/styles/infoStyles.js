@@ -123,7 +123,7 @@ export const HarvestProjects = styled.div`
 `;
 
 export const HarvestProject = styled.div`
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -153,19 +153,30 @@ export const Icon = styled.div`
     }
 `;
 
+export const Vector = styled.div`
+    position: absolute;
+    z-index: 10;
+`;
+
 export const HarvestCircle = styled.div`
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 104px;
-    height: 104px;
+    width: 95px;
+    height: 95px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #FCDC67 0%, #EDAE50 100%);
     border-radius: 48px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: 14px;
+    @media(min-width: 991px){
+        width: 104px;
+        height: 104px;
+        font-size: 1rem;
+    }
 `;
 
 export const Money = styled.div`
@@ -185,6 +196,18 @@ export const MoneyImg = styled.div`
     height: 83px;
     background: #E5EEED;
     border-radius: 50%;
+`;
+
+export const Arrows = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55px;
+    @media(min-width: 768px){
+        bottom: 70px;
+    }
 `;
 
 export const Button = styled.span`
