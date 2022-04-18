@@ -5,13 +5,13 @@ export const Container = styled.article`
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 50px 0;
+    margin: 10px 0;
     min-height: 0;
     min-width: 0;
     gap: 0 30px;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     @media(min-width: 768px){
-        margin: 100px 0;
+        margin: 90px 0 0 0;
         grid-template-columns: 310px 1fr;
         padding-bottom: 0;
     }
@@ -30,12 +30,12 @@ export const TextColumn = styled.div`
 
 export const Title = styled.p`
     font-weight: 700;
-    font-size: 50px;
-    line-height: 72px;
-    margin: 10px 0 10px 0;
-    @media(min-width: 991px){
-        margin: 80px 0 10px 0;
-        font-size: 60px;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 20px 0 0 0;
+    @media(min-width: 1100px){
+        margin: 40px 0 0 0;
+        font-size: 65px;
         line-height: 72px;
     }
 `;
@@ -64,7 +64,7 @@ export const Box = styled.div`
     width: 100px;
     height: 100px;
     grid-column: span 4;
-    margin-top: 40px;
+    margin-top: 16px;
     background: #FFFFFF;
     border: 1px solid #E9E9E9;
     box-sizing: border-box;
@@ -86,6 +86,7 @@ export const Box = styled.div`
         width: 120px;
         height: 120px;
         grid-column: span ${({more}) => more ? '4' : '4'};
+        margin-top: 40px;
     }
     @media(min-width: 991px){
         margin-left: ${({rowLeft}) => rowLeft ? '60px' : '0'};

@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.article`
-    margin: 50px 0 100px 0;
+    margin-top: 30px;
+    @media(min-width: 768px){
+        margin-top: 136px;
+    }
 `;
 
 export const Grid = styled.div`

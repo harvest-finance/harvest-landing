@@ -6,7 +6,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 200px 0 50px 0;
+    margin: 160px 0 0 0;
     padding-bottom: 23px;
     border-bottom: 1px solid #E9E9E9;
     @media(min-width: 768px){

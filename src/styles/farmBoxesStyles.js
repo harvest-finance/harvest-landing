@@ -4,9 +4,10 @@ export const Container = styled.article`
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px 30px;
-    margin: 100px 0;
+    margin-top: 35px;
     @media(min-width: 768px){
         grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
     }
 `;
 

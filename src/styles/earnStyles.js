@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.article`
     display: grid;
     grid-template-columns: 1fr;
-    margin: 82px 0;
+    margin: 39px 0 0 0;
     align-items: center;
     justify-items: center;
     @media(min-width: 768px){
+        margin: 82px 0 0 0;
         grid-template-columns: 0.5fr 0.5fr;
         justify-items: flex-start;
     }

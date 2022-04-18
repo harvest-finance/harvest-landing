@@ -2,8 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
     position: relative;
-    margin-top: 120px;
+    margin-top: 40px;
     z-index: 10;
+    @media(min-width: 768px){
+        margin-top: 110px;
+    }
 `;
 
 export const FooterBG = styled.div`

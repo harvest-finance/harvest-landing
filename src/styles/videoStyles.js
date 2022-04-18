@@ -1,7 +1,10 @@
 import styled, {keyframes} from 'styled-components';
 
 export const Container = styled.article`
-    margin: 100px 0;
+    margin-top: 30px;
+    @media(min-width: 768px){
+        margin-top: 123px;
+    }
 `;
 
 export const Frame = styled.div`

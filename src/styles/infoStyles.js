@@ -6,14 +6,15 @@ export const InfoContainer = styled.article`
     gap: 0 30px;
     & h1{
         font-weight: 700;
-        font-size: 50px;
+        font-size: 45px;
         line-height: 42px;
         text-align: center;
-        margin: 45px 0 0 0;
+        margin: 10px 0 0 0;
     }
     @media(min-width: 768px){
         grid-template-columns: 0.6fr 0.4fr;
         & h1{
+            margin: 45px 0 0 0;
             font-size: 60px;
             padding-right: 50px;
             line-height: 62px;
@@ -22,6 +23,7 @@ export const InfoContainer = styled.article`
     }
     @media(min-width: 991px){
         & h1{
+            margin: 85px 0 0 0;
             font-size: 80px;
             line-height: 82px;
         }
@@ -57,6 +59,7 @@ export const Column = styled.div`
     padding: 30px 0;
     &:nth-of-type(2){
         position: relative;
+        padding-top: 0;
     }
     @media(min-width: 768px){
         padding: 50px 0;
@@ -90,12 +93,12 @@ export const FarmImage = styled.div`
     }
     @media(min-width: 991px){
         & {
-            max-height: 700px;
+            max-height: 740px;
         }
     }
     @media(min-width: 1100px){
         & {
-            max-height: 750px;
+            max-height: 770px;
         }
     }
 `;
@@ -215,8 +218,8 @@ export const Button = styled.span`
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-    width: 200px;
-    height: 55px;
+    width: 260px;
+    height: 60px;
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #FCDC67 0%, #EDAE50 100%);
     border-radius: 10px;
     font-weight: 600;
