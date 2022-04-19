@@ -92,14 +92,13 @@ export const FarmImage = styled.div`
         border-radius: 0 0 0 100px;
     }
     @media(min-width: 991px){
-        & {
-            max-height: 740px;
-        }
+        max-height: 740px;
     }
     @media(min-width: 1100px){
-        & {
-            max-height: 770px;
-        }
+        max-height: 770px;
+    }
+    @media(min-width: 1940px){
+        left: 55%;
     }
 `;
 

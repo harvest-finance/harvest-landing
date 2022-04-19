@@ -10,7 +10,7 @@ export default function FarmBoxes(){
                     <Image src="/farm_token.jpg" layout='fill' objectFit="cover" objectPosition="center bottom"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Image src="/tractor.png" width={30} height={30} />
+                    <Image src="/tractor.svg" width={30} height={30} />
                 </Icon>
                 <Title>
                     FARM TOKEN
