@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {DashboardButton} from './navbarStyles'
 
 export const Container = styled.article`
     display: grid;
@@ -66,13 +67,9 @@ export const Text = styled.p`
     }
 `;
 
-export const Button = styled.span`
+export const Button = styled(DashboardButton)`
     display: table;
-    padding: 15px 35px;
-    background: radial-gradient(81.9% 81.9% at 50% 18.1%, #2D2D2D 0%, #000000 100%);
-    border-radius: 10px;
     margin-top: 30px;
-    font-size: 0.5em;
     @media(min-width: 768px){
         font-size: 0.4em;
         position: absolute;

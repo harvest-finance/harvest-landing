@@ -162,6 +162,15 @@ export const DashboardButton = styled.span`
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    &:hover{
+        background: radial-gradient(81.9% 81.9% at 50% 18.1%, #2D2D2D 0%, #000000 100%);
+        box-shadow: 0px 14px 24px rgba(2, 2, 2, 0.2);
+        transition: all 0.2s ease-in-out;
+    }
+    &:active{
+        background: #000000;
+        transition: none;
+    }
     @media(min-width: 768px){
         padding: 13px 40px;
     }

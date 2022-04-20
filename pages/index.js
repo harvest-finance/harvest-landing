@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <div className="container">
         <Head>
-          <title>Harvest</title>
-          <meta name="description" content="" />
+          <title>Harvest: Earn Passive Yield on Your Crypto</title>
+          <meta name="description" content="The #1 place in DeFi to put your idle crypto assets to work in 'set and forget' fashion!" />
         </Head>
         <Nav/>
         <main>

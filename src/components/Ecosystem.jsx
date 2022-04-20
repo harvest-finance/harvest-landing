@@ -14,7 +14,7 @@ export default function Ecosystem(){
                     <a>
                         <EarningButton>
                             START EARNING
-                            <Image src="/arrow_right.png" width={13} height={13} />
+                            <Image src="/arrow_right.svg" width={13} height={13} />
                         </EarningButton>
                     </a>
                 </Link>

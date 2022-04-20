@@ -13,7 +13,7 @@ export default function Earn(){
         <Container>
             <BarsContainer ref={ref}>
                 <BarsBg>
-                    <Image src="/plant_bg.png" width={461} height={461}/>
+                    <Image src="/plant_bg.svg" width={461} height={461}/>
                 </BarsBg>
                 <BarsLegend>
                     <div className='centerFlex'><Circle/>Yield without Harvest</div>
@@ -44,25 +44,25 @@ export default function Earn(){
                 <List>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/compounding.png" width={30} height={30} />
+                            <Image src="/compounding.svg" width={30} height={30} />
                         </Icon>
                         Auto-compounding
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/auto_rewards.png" width={30} height={30} />
+                            <Image src="/auto_rewards.svg" width={30} height={30} />
                         </Icon>
                         Auto-harvested rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/farm_rewards.png" width={30} height={30} />
+                            <Image src="/farm_rewards.svg" width={30} height={30} />
                         </Icon>
                         FARM Rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/token_rewards.png" width={30} height={30} />
+                            <Image src="/token_rewards.svg" width={30} height={30} />
                         </Icon>
                         Unique DAO token rewards
                     </ListItem>

@@ -15,7 +15,7 @@ export default function Info(){
                     <a>
                         <Button>
                             START EARNING
-                            <Image src="/arrow_right.png" width={13} height={13} />
+                            <Image src="/arrow_right.svg" width={13} height={13} />
                         </Button>
                     </a>
                 </Link>
@@ -34,21 +34,21 @@ export default function Info(){
                                         <div className='relativeContainer'>
                                             <HarvestProject>
                                                 <Icon className='centerFlex' style={background}>
-                                                    <Image src={`/projects/${imgUrl}.png`} {...dimensions.img} alt={name}/>
+                                                    <Image src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name}/>
                                                 </Icon>
                                                 {name}
                                             </HarvestProject>
                                             <Vector style={{...position[1]}}>
-                                                <Image src={`/projects/${imgUrl}-vector.png`} {...dimensions.vector} alt={`${name}-vector`} />
+                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt={`${name}-vector`} />
                                             </Vector>
                                         </div>
                                     </div>
                                 )
                             }
                             <Arrows>
-                                <Image src="/down_arrow.png" width={18} height={10}/>
-                                <Image src="/down_arrow.png" width={18} height={10} style={{opacity: 0.7}}/>
-                                <Image src="/down_arrow.png" width={18} height={10} style={{opacity: 0.4}}/>
+                                <Image src="/down_arrow.svg" width={18} height={10}/>
+                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.7}}/>
+                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.4}}/>
                             </Arrows>
                             <Money className='centerFlex'>
                                 <MoneyImg className='centerFlex'>

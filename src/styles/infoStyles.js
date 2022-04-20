@@ -225,6 +225,15 @@ export const Button = styled.span`
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background: radial-gradient(100% 100% at 50% 0%, #FCDC67 0%, #EDAE50 100%);
+        box-shadow: 0px 14px 24px rgba(237, 174, 80, 0.2);
+    }
+    &:active{
+        background: #EDAE50;
+        transition: none;
+    }
     @media(min-width: 768px){
         width: 260px;
         height: 70px;

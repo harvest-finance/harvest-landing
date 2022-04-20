@@ -11,19 +11,19 @@ export default function Footer(){
             <div className='container'>
                 <Grid>
                     <Box className='centerFlex' href="https://twitter.com/" target="_blank">
-                        <Image src="/twitter.png" width={50} height={54}/>
+                        <Image src="/twitter.svg" width={50} height={54}/>
                         <p>Twitter</p>
                     </Box>
                     <Box className='centerFlex' href="https://discord.com/" target="_blank">
-                        <Image src="/discord.png" width={54} height={54}/>
+                        <Image src="/discord.svg" width={54} height={54}/>
                         <p>Discord</p>
                     </Box>
                     <Box className='centerFlex' href="https://medium.com/" target="_blank">
-                        <Image src="/medium.png" width={54} height={54}/>
+                        <Image src="/medium.svg" width={54} height={54}/>
                         <p>Medium</p>
                     </Box>
                     <Box className='centerFlex' href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en" target="_blank">
-                        <Image src="/talk.png" width={54} height={50}/>
+                        <Image src="/talk.svg" width={54} height={50}/>
                         <p>KakaoTalk</p>
                     </Box>
                 </Grid>

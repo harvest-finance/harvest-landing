@@ -14,7 +14,7 @@ export default function Video(){
             <Frame>
                 <IframeContainer>
                     <PosterImage play={play}>
-                        <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center"/>
+                        <Image src="/video_bg.svg" layout="fill" objectFit="cover" objectPosition="center"/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
                         <Effect className='relativeContainer'>

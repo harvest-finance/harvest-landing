@@ -1,52 +1,52 @@
 const trusted_platforms = [
     {
         name: 'Uniswap',
-        imgUrl: 'uniswap.png',
+        imgUrl: 'uniswap.svg',
         attr: {rowLeft: true}
     },
     {
         name: 'Polygon',
-        imgUrl: 'polygon.png',
+        imgUrl: 'polygon.svg',
         attr: {}
     },
     {
         name: 'Compound',
-        imgUrl: 'compound.png',
+        imgUrl: 'compound.svg',
         attr: {rowRight: true}
     },
     {
-        name: 'Bancor',
-        imgUrl: 'bancor.png',
+        name: 'BSC',
+        imgUrl: 'bsc.svg',
         attr: {more: true}
     },
     {
-        name: 'Bancor',
-        imgUrl: 'bancor.png',
+        name: 'Lido',
+        imgUrl: 'lido.svg',
         attr: {more: true}
     },
     {
-        name: 'Bancor',
-        imgUrl: 'bancor.png',
+        name: 'Convex',
+        imgUrl: 'convex.svg',
         attr: {more: true}
     },
     {
         name: 'Sushiswap',
-        imgUrl: 'sushiswap.png',
+        imgUrl: 'sushiswap.svg',
         attr: {more: true}
     },
     {
         name: 'Curve',
-        imgUrl: 'curve.png',
+        imgUrl: 'curve.svg',
         attr: {rowLeft: true}
     },
     {
         name: 'Jarvis',
-        imgUrl: 'jarvis.png',
+        imgUrl: 'jarvis.svg',
         attr: {}
     },
     {
         name: 'Bancor',
-        imgUrl: 'bancor.png',
+        imgUrl: 'bancor.svg',
         attr: {rowRight: true}
     }
 ]

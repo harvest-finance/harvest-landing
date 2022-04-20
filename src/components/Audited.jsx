@@ -7,16 +7,16 @@ export default function Audited(){
             <Text>AUDITED BY</Text>
             <Grid>
                 <DefaultService>
-                    <Image src="/least.png" width={242} height={49}/>
+                    <Image src="/least.svg" width={242} height={49}/>
                 </DefaultService>
                 <DefaultService>
-                    <Image src="/haechi.png" width={192} height={40}/>
+                    <Image src="/haechi.svg" width={192} height={40}/>
                 </DefaultService>
                 <DefaultService>
-                    <Image src="/peck.png" width={199} height={56}/>
+                    <Image src="/peck.svg" width={199} height={56}/>
                 </DefaultService>
                 <DefaultService>
-                    <Image src="/certik.png" width={206} height={53}/>
+                    <Image src="/certik.svg" width={206} height={53}/>
                 </DefaultService>
             </Grid>
         </Container>

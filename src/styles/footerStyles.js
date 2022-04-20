@@ -44,6 +44,11 @@ export const Box = styled.a`
     z-index: 10;
     padding-top: 30px;
     cursor: pointer;
+    &:hover{
+        &:hover{
+        box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.1);
+    }
+    }
     & p{
         margin: 22px 0 25px 0;
         font-weight: 400;
