@@ -5,9 +5,10 @@ import Services from '../src/components/Services'
 import Earn from '../src/components/Earn'
 import Video from '../src/components/Video'
 import Ecosystem from '../src/components/Ecosystem'
-import Audited from '../src/components/Audited'
+import Companies from '../src/components/Companies'
 import FarmBoxes from '../src/components/FarmBoxes'
 import Footer from '../src/components/Footer'
+import {audited, seen} from '../src/consts/companies'
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
           <Info/>
           <Services/>
           <Earn/>
+          <Companies title="AS SEEN ON" data={seen}/>
           <Video/>
           <Ecosystem/>
-          <Audited/>
+          <Companies title="AUDITED BY" data={audited} grid/>
           <FarmBoxes/>
         </main>
       </div>

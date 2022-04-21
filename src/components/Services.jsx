@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import {DefaultService} from '../styles/auditedStyles'
+import {DefaultService} from '../styles/companiesStyles'
 
 const Container = styled.div`
     display: flex;

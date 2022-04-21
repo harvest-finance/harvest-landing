@@ -3,7 +3,7 @@ import styled, {keyframes} from 'styled-components';
 export const Container = styled.article`
     margin-top: 30px;
     @media(min-width: 768px){
-        margin-top: 123px;
+        margin-top: 90px;
     }
 `;
 
