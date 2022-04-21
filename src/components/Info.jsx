@@ -11,14 +11,10 @@ export default function Info(){
                     EARN YIELD ON YOUR CRYPTO
                 </h1>
                 <InfoText>Put your idle assets to work.</InfoText>
-                <Link href="/">
-                    <a>
-                        <Button>
-                            START EARNING
-                            <Image src="/arrow_right.svg" width={13} height={13} />
-                        </Button>
-                    </a>
-                </Link>
+                <Button href="https://app.harvest.finance/">
+                    START EARNING
+                    <Image src="/arrow_right.svg" width={13} height={13} />
+                </Button>
             </Column>
             <Column>
                 <div className='relativeContainer centerFlex'>

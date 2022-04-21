@@ -18,9 +18,7 @@ export default function FarmBoxes(){
                 <Text>
                     $FARM is the heart of Harvest. It allows you to capitalize on the growth and success of our platform.
                 </Text>
-                <Link href="/">
-                    <a><Button>Explore FARM</Button></a>
-                </Link>
+                <Button href="/">Explore FARM</Button>
             </Box>
             <Box>
                 <Background>
@@ -35,9 +33,7 @@ export default function FarmBoxes(){
                 <Text>
                     Harvest is platform made for and run by the community. Join us on this adventure and find your place!
                 </Text>
-                <Link href="/">
-                    <a><Button>Explore Opportunites</Button></a>
-                </Link>
+                <Button href="/">Explore Opportunites</Button>
             </Box>
         </Container>
     )

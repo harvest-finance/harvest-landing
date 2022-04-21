@@ -20,20 +20,16 @@ function ToogleNav(){
             </TooglerButton>
             <ToogleItems open={open}>
                 <ToogleItem>
-                    <Link href="/tokenomics"><a>Tokenomics</a></Link>
+                    <a href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics">Tokenomics</a>
                 </ToogleItem>
                 <ToogleItem>
-                    <Link href="/statistics"><a>Statistics</a></Link>
+                    <a href="https://dune.com/llama/Harvest-Finance">Statistics</a>
                 </ToogleItem>
                 <ToogleItem>
-                    <Link href="/blog"><a>Blog</a></Link>
+                    <a href="https://medium.com/harvest-finance">Blog</a>
                 </ToogleItem>
             </ToogleItems>
-            <Link href="/">
-                <a>
-                    <DashboardButton>Dashboard</DashboardButton>
-                </a>
-            </Link>
+            <DashboardButton href="https://app.harvest.finance/">Dashboard</DashboardButton>
         </ToogleNavbar>
     )
 }

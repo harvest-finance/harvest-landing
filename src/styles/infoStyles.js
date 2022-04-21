@@ -212,7 +212,7 @@ export const Arrows = styled.div`
     }
 `;
 
-export const Button = styled.span`
+export const Button = styled.a`
     display: flex;
     align-items: center;
     justify-content: space-between;

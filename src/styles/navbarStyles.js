@@ -152,7 +152,7 @@ export const ToogleItem = styled.li`
     }
 `;
 
-export const DashboardButton = styled.span`
+export const DashboardButton = styled.a`
     background: radial-gradient(81.9% 81.9% at 50% 18.1%, #2D2D2D 0%, #000000 100%);
     border-radius: 10px;
     color: white;
@@ -162,6 +162,7 @@ export const DashboardButton = styled.span`
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
     &:hover{
         background: radial-gradient(81.9% 81.9% at 50% 18.1%, #2D2D2D 0%, #000000 100%);
         box-shadow: 0px 14px 24px rgba(2, 2, 2, 0.2);

@@ -24,7 +24,7 @@ export default function Video(){
                     <iframe
                         width="100%"
                         height="100%"
-                        src={play ? `https://www.youtube.com/embed/9kxPiPj9sFc?autoplay=1` : undefined}
+                        src={play ? `https://www.youtube.com/embed/dkC2_qNNHys?autoplay=1` : undefined}
                         allow='autoplay; encrypted-media'
                     />
                 </IframeContainer>
