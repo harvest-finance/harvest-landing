@@ -10,19 +10,19 @@ export default function Footer(){
             </FooterBG>
             <div className='container'>
                 <Grid>
-                    <Box className='centerFlex' href="https://twitter.com/" target="_blank">
+                    <Box className='centerFlex' href="https://twitter.com/harvest_finance" target="_blank">
                         <Image src="/twitter.svg" width={50} height={54}/>
                         <p>Twitter</p>
                     </Box>
-                    <Box className='centerFlex' href="https://discord.com/" target="_blank">
+                    <Box className='centerFlex' href="https://discord.gg/xHXe3tYjPY" target="_blank">
                         <Image src="/discord.svg" width={54} height={54}/>
                         <p>Discord</p>
                     </Box>
-                    <Box className='centerFlex' href="https://medium.com/" target="_blank">
+                    <Box className='centerFlex' href="https://medium.com/harvest-finance" target="_blank">
                         <Image src="/medium.svg" width={54} height={54}/>
                         <p>Medium</p>
                     </Box>
-                    <Box className='centerFlex' href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=en" target="_blank">
+                    <Box className='centerFlex' href="https://open.kakao.com/o/g9z8qgDd" target="_blank">
                         <Image src="/talk.svg" width={54} height={50}/>
                         <p>KakaoTalk</p>
                     </Box>
@@ -30,9 +30,9 @@ export default function Footer(){
                 <BottomText>
                     <p>All rights reserved. Harvest Finance 2022.</p>
                     <div>
-                        <a>Tokenomics</a>
-                        <a>Statistics</a>
-                        <a>Dashboard</a>
+                        <a href='https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics' target="_blank">Tokenomics</a>
+                        <a href='https://dune.com/llama/Harvest-Finance' target="_blank">Statistics</a>
+                        <a href='https://app.harvest.finance/' target="_blank">Dashboard</a>
                     </div>
                 </BottomText>
             </div>

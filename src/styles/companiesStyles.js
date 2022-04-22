@@ -28,7 +28,7 @@ export const CompaniesContainer = styled.div`
             justify-content: space-evenly;
             flex-wrap: wrap;
             align-items: center;
-            & div{
+            & a{
                 margin: 10px;
             }
         `;
@@ -44,10 +44,11 @@ export const Text = styled.p`
     margin-bottom: 40px;
 `;
 
-export const DefaultService = styled.div`
+export const DefaultService = styled.a`
+    display: block;
     border-radius: 18px;
     max-width: 150px;
-    cursor: default;
+    cursor: pointer;
     @media(min-width: 768px){
         max-width: unset;
         &:hover{

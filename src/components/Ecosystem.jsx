@@ -10,7 +10,7 @@ export default function Ecosystem(){
             <TextColumn>
                 <Title> HARVEST ECOSYSTEM </Title>
                 <InfoText> 30+ Trusted Platforms </InfoText>
-                <EarningButton href="/">
+                <EarningButton href="https://app.harvest.finance/">
                     START EARNING
                     <Image src="/arrow_right.svg" width={13} height={13} />
                 </EarningButton>

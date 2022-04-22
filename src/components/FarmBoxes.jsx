@@ -18,7 +18,7 @@ export default function FarmBoxes(){
                 <Text>
                     $FARM is the heart of Harvest. It allows you to capitalize on the growth and success of our platform.
                 </Text>
-                <Button href="/">Explore FARM</Button>
+                <Button href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics">Explore FARM</Button>
             </Box>
             <Box>
                 <Background>
@@ -33,7 +33,7 @@ export default function FarmBoxes(){
                 <Text>
                     Harvest is platform made for and run by the community. Join us on this adventure and find your place!
                 </Text>
-                <Button href="/">Explore Opportunites</Button>
+                <Button href="https://harvest.finance/work">Explore Opportunites</Button>
             </Box>
         </Container>
     )

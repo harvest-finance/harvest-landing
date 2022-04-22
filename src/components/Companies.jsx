@@ -7,8 +7,8 @@ export default function Audited({title, data, grid}){
             <Text>{title}</Text>
             <CompaniesContainer grid={grid}>
                 {
-                    data.map(({img, size}) =>
-                        <DefaultService key={img}>
+                    data.map(({img, size, link}) =>
+                        <DefaultService key={img} href={link} target="_blank">
                             <Image src={`/${img}`} {...size}/>
                         </DefaultService>
                     )
