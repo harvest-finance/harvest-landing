@@ -30,9 +30,9 @@ export default function Footer(){
                 <BottomText>
                     <p>All rights reserved. Harvest Finance 2022.</p>
                     <div>
-                        <a href='https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics' target="_blank">Tokenomics</a>
-                        <a href='https://dune.com/llama/Harvest-Finance' target="_blank">Statistics</a>
-                        <a href='https://app.harvest.finance/' target="_blank">Dashboard</a>
+                        <a href='https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics' target="_blank" rel="noreferrer">Tokenomics</a>
+                        <a href='https://dune.com/llama/Harvest-Finance' target="_blank" rel="noreferrer">Statistics</a>
+                        <a href='https://app.harvest.finance/' target="_blank" rel="noreferrer">Dashboard</a>
                     </div>
                 </BottomText>
             </div>
