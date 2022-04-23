@@ -14,14 +14,16 @@ export default function Video(){
             <Frame>
                 <IframeContainer>
                     <PosterImage play={play}>
-                        <Image src="/video_bg.svg" layout="fill" objectFit="cover" objectPosition="center"/>
+                        <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center" alt="video background"/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
+                        <span className='forScreenReaders'>Play Video</span>
                         <Effect className='relativeContainer'>
-                            <Image src="/play.png" width={78} height={78} />
+                            <Image src="/play.png" width={78} height={78} alt="play button"/>
                         </Effect>
                     </PlayButton>
                     <iframe
+                        title="Harvest 3: The New Beginning"
                         width="100%"
                         height="100%"
                         src={play ? `https://www.youtube.com/embed/dkC2_qNNHys?autoplay=1` : undefined}

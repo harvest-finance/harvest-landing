@@ -13,7 +13,7 @@ export default function Info(){
                 <InfoText>Put your idle assets to work.</InfoText>
                 <Button href="https://app.harvest.finance/">
                     START EARNING
-                    <Image src="/arrow_right.svg" width={13} height={13} />
+                    <Image src="/arrow_right.svg" width={13} height={13} alt="Arrow right"/>
                 </Button>
             </Column>
             <Column>
@@ -21,7 +21,7 @@ export default function Info(){
                     <HarvestProjects>
                         <div className='relativeContainer'>
                             <HarvestCircle>
-                                <Image src="/harvest_icon.svg" width={50} height={50}/>
+                                <Image src="/harvest_icon.svg" width={50} height={50} alt="harvest growth"/>
                                 <span>Harvest</span>
                             </HarvestCircle>
                             {
@@ -35,26 +35,28 @@ export default function Info(){
                                                 {name}
                                             </HarvestProject>
                                             <Vector style={{...position[1]}}>
-                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt={`${name}-vector`} />
+                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector" />
                                             </Vector>
                                         </div>
                                     </div>
                                 )
                             }
                             <Arrows>
-                                <Image src="/down_arrow.svg" width={18} height={10}/>
-                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.7}}/>
-                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.4}}/>
+                                <Image src="/down_arrow.svg" width={18} height={10} alt="arrow down"/>
+                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.7}} alt="arrow down"/>
+                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.4}} alt="arrow down"/>
                             </Arrows>
                             <Money className='centerFlex'>
                                 <MoneyImg className='centerFlex'>
-                                    <Image src="/money.svg" width={47} height={43} />
+                                    <Image src="/money.svg" width={47} height={43} alt="money"/>
                                 </MoneyImg>
                             </Money>
                         </div>
                     </HarvestProjects>
                 </div>
-                <FarmImage/>
+                <FarmImage>
+                    {/* <Image src="/field.jpeg" layout='fill' objectFit="cover" alt="field"/> */}
+                </FarmImage>
             </Column>
         </InfoContainer>
     )

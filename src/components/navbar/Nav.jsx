@@ -8,9 +8,10 @@ function Nav(){
         <NavContainer>
             <Link href="/">
                 <a>
+                <span className='forScreenReaders'>Homepage</span>
                     <Logo>
                         <Icon className='centerFlex'>
-                            <Image src="/Farm_logo.svg" width={32} height={28} />
+                            <Image src="/Farm_logo.svg" width={32} height={28} alt="Harvest logo"/>
                         </Icon>
                         <LogoText>Harvest</LogoText>
                     </Logo>

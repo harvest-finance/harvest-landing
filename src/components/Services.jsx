@@ -51,19 +51,19 @@ export default function Services(){
     return(
         <Container>
             <Service className='centerFlex'>
-                <Image src="/bancor.svg" width={25} height={39}/>
+                <Image src="/bancor.svg" width={25} height={39} alt="Bancor"/>
                 <p>Bancor</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/binance.svg" width={25} height={39}/>
+                <Image src="/binance.svg" width={25} height={39} alt="Binance"/>
                 <p>Binance</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/coinbase.svg" width={25} height={39}/>
+                <Image src="/coinbase.svg" width={25} height={39} alt="Coinbase"/>
                 <p>Coinbase</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/crypto_com.svg" width={25} height={39}/>
+                <Image src="/crypto_com.svg" width={25} height={39} alt="Crypto.com"/>
                 <p>crypto.com</p>
             </Service>
         </Container>

@@ -6,24 +6,24 @@ export default function Footer(){
     return(
         <Container>
             <FooterBG>
-                <Image src="/field_footer.svg" layout='fill' objectFit="cover" />
+                <Image src="/field_footer.svg" layout='fill' objectFit="cover" alt="field"/>
             </FooterBG>
             <div className='container'>
                 <Grid>
                     <Box className='centerFlex' href="https://twitter.com/harvest_finance" target="_blank">
-                        <Image src="/twitter.svg" width={50} height={54}/>
+                        <Image src="/twitter.svg" width={50} height={54} alt="Twitter icon"/>
                         <p>Twitter</p>
                     </Box>
                     <Box className='centerFlex' href="https://discord.gg/xHXe3tYjPY" target="_blank">
-                        <Image src="/discord.svg" width={54} height={54}/>
+                        <Image src="/discord.svg" width={54} height={54} alt="Discord icon"/>
                         <p>Discord</p>
                     </Box>
                     <Box className='centerFlex' href="https://medium.com/harvest-finance" target="_blank">
-                        <Image src="/medium.svg" width={54} height={54}/>
+                        <Image src="/medium.svg" width={54} height={54} alt="Medium icon"/>
                         <p>Medium</p>
                     </Box>
                     <Box className='centerFlex' href="https://open.kakao.com/o/g9z8qgDd" target="_blank">
-                        <Image src="/talk.svg" width={54} height={50}/>
+                        <Image src="/talk.svg" width={54} height={50} alt="KakaoTalk icon"/>
                         <p>KakaoTalk</p>
                     </Box>
                 </Grid>

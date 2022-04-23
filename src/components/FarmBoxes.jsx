@@ -7,10 +7,10 @@ export default function FarmBoxes(){
         <Container>
             <Box>
                 <Background>
-                    <Image src="/farm_token.svg" layout='fill' objectFit="cover" objectPosition="center bottom"/>
+                    <Image src="/farm_token.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Image src="/tractor.svg" width={30} height={30} />
+                    <Image src="/tractor.svg" width={30} height={30} alt="tractor"/>
                 </Icon>
                 <Title>
                     FARM TOKEN
@@ -22,10 +22,10 @@ export default function FarmBoxes(){
             </Box>
             <Box>
                 <Background>
-                    <Image src="/contribute.svg" layout='fill' objectFit="cover" objectPosition="center bottom"/>
+                    <Image src="/contribute.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Image src="/vegetables.svg" width={30} height={30} />
+                    <Image src="/vegetables.svg" width={30} height={30} alt="vegetables in the box"/>
                 </Icon>
                 <Title>
                     CONTRIBUTE AND EARN
