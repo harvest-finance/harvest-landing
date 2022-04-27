@@ -19,7 +19,7 @@ export const Frame = styled.div`
     padding: 0px;
     @media(min-width: 768px){
         height: 500px;
-        padding: 20px;
+        padding: 20px 25px;
     }
     @media(min-width: 991px){
         height: 654px;
