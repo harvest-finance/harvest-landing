@@ -34,7 +34,7 @@ export default function Info(){
                                                 {name}
                                             </HarvestProject>
                                             <Vector style={{...position[1]}}>
-                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector" priority={true}/>
+                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector"/>
                                             </Vector>
                                         </div>
                                     </div>
