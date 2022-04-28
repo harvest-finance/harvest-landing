@@ -29,7 +29,7 @@ export default function Info(){
                                         <div className='relativeContainer'>
                                             <HarvestProject>
                                                 <Icon className='centerFlex' style={background}>
-                                                    <Image src={`/projects/${imgUrl}.png`} {...dimensions.img} alt={name} priority={true}/>
+                                                    <Image src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name} priority={true}/>
                                                 </Icon>
                                                 {name}
                                             </HarvestProject>
