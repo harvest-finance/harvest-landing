@@ -1,7 +1,6 @@
 import {Column, FarmImage, HarvestProjects, InfoText, InfoContainer, Button, HarvestCircle, HarvestProject, Icon, Money, MoneyImg, Vector, Arrows} from '../styles/infoStyles'
 import Image from 'next/image'
 import projects from '../consts/projects'
-import Link from 'next/link'
 
 export default function Info(){
     return(
