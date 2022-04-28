@@ -1,6 +1,5 @@
 import {Container, TextColumn, PlatformsColumn, Box, Title, Icon, EarningButton} from '../styles/ecosystemStyles'
 import {InfoText} from '../styles/infoStyles'
-import Link from 'next/link'
 import Image from 'next/image'
 import Img from './Img'
 import trustedPlatforms from '../consts/trusted_platforms'

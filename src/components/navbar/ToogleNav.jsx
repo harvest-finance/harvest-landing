@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {ToogleNavbar, TooglerButton, Toogler, Bar, ToogleItems, ToogleItem, DashboardButton} from '../../styles/navbarStyles'
-import Link from 'next/link'
 
 function ToogleNav(){
     const [open, setOpen] = useState(false);

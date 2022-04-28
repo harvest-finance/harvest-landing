@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import {Container, Frame, PosterImage, PlayButton, IframeContainer, Effect} from '../styles/videoStyles'
 import Image from 'next/image'
 

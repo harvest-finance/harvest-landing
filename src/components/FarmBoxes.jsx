@@ -1,6 +1,4 @@
 import {Container, Box, Icon, Background, Title, Text, Button} from '../styles/farmBoxesStyles'
-import Image from 'next/image'
-import Link from 'next/link'
 import Img from './Img'
 
 export default function FarmBoxes(){
