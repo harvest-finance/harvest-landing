@@ -14,7 +14,7 @@ export default function Video(){
             <Frame>
                 <IframeContainer>
                     <PosterImage play={play}>
-                        <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center" alt="video background"/>
+                        <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center" alt="video background" priority={true}quality={60}/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
                         <span className='forScreenReaders'>Play Video</span>

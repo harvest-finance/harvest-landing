@@ -2,6 +2,7 @@ import {Container, TextColumn, PlatformsColumn, Box, Title, Icon, EarningButton}
 import {InfoText} from '../styles/infoStyles'
 import Link from 'next/link'
 import Image from 'next/image'
+import Img from './Img'
 import trustedPlatforms from '../consts/trusted_platforms'
 
 export default function Ecosystem(){
@@ -20,7 +21,7 @@ export default function Ecosystem(){
                     trustedPlatforms.map(({name, imgUrl, attr}, i) =>
                         <Box {...attr} key={`${name}.${i}`}>
                             <Icon>
-                                <Image src={`/trusted_projects/${imgUrl}`} width={74} height={74} alt={name}/>
+                                <Img src={`/trusted_projects/${imgUrl}`} width={74} height={74} alt={name}/>
                             </Icon>
                             <p>{name}</p>
                         </Box>

@@ -78,10 +78,6 @@ export const FarmImage = styled.div`
     top: 50%;
     border-radius: 50px 50px 0 0;
     overflow: hidden;
-    background-image: url('/field.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     @media(min-width: 768px){
         right: 0;
         top: 0;

@@ -1,16 +1,17 @@
 import {Container, Box, Icon, Background, Title, Text, Button} from '../styles/farmBoxesStyles'
 import Image from 'next/image'
 import Link from 'next/link'
+import Img from './Img'
 
 export default function FarmBoxes(){
     return(
         <Container>
             <Box>
                 <Background>
-                    <Image src="/farm_token.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
+                    <Img src="/farm_token.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Image src="/tractor.svg" width={30} height={30} alt="tractor"/>
+                    <Img src="/tractor.svg" width={30} height={30} alt="tractor"/>
                 </Icon>
                 <Title>
                     FARM TOKEN
@@ -22,10 +23,10 @@ export default function FarmBoxes(){
             </Box>
             <Box>
                 <Background>
-                    <Image src="/contribute.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
+                    <Img src="/contribute.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Image src="/vegetables.svg" width={30} height={30} alt="vegetables in the box"/>
+                    <Img src="/vegetables.svg" width={30} height={30} alt="vegetables in the box"/>
                 </Icon>
                 <Title>
                     CONTRIBUTE AND EARN

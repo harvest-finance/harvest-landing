@@ -1,5 +1,5 @@
 import {DefaultService, Container, CompaniesContainer, Text} from '../styles/companiesStyles'
-import Image from 'next/image'
+import Img from './Img'
 
 export default function Audited({title, data, grid}){
     return(
@@ -10,7 +10,7 @@ export default function Audited({title, data, grid}){
                     data.map(({name, img, size, link}) =>
                         <DefaultService key={name} href={link} target="_blank">
                             <span className='forScreenReaders'>{name}</span>
-                            <Image src={`/${img}`} {...size} alt={name}/>
+                            <Img src={`/${img}`} {...size} alt={name}/>
                         </DefaultService>
                     )
                 }

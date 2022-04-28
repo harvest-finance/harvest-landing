@@ -2,6 +2,7 @@ import {Container, Title, InfoPart, List, ListItem, Icon, BarsContainer, BarsBg,
 import {InfoText} from '../styles/infoStyles'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
+import Img from './Img'
 
 export default function Earn(){
     const { ref, inView } = useInView({
@@ -44,25 +45,25 @@ export default function Earn(){
                 <List>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/compounding.svg" width={30} height={30} alt="Auto-compounding"/>
+                            <Img src="/compounding.svg" width={30} height={30} alt="Auto-compounding"/>
                         </Icon>
                         Auto-compounding
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/auto_rewards.svg" width={30} height={30} alt="Auto-harvested rewards"/>
+                            <Img src="/auto_rewards.svg" width={30} height={30} alt="Auto-harvested rewards"/>
                         </Icon>
                         Auto-harvested rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/farm_rewards.svg" width={30} height={30} alt="FARM Rewards"/>
+                            <Img src="/farm_rewards.svg" width={30} height={30} alt="FARM Rewards"/>
                         </Icon>
                         FARM Rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Image src="/token_rewards.svg" width={30} height={30} alt="Unique DAO token rewards"/>
+                            <Img src="/token_rewards.svg" width={30} height={30} alt="Unique DAO token rewards"/>
                         </Icon>
                         Unique DAO token rewards
                     </ListItem>
