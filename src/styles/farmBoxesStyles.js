@@ -70,10 +70,12 @@ export const Text = styled.p`
 export const Button = styled(DashboardButton)`
     display: table;
     margin-top: 30px;
+    padding: 15px 40px;
     @media(min-width: 768px){
         font-size: 0.4em;
         position: absolute;
         left: 40px;
         bottom: 120px;
+        padding: 15px 40px;
     }
 `;
