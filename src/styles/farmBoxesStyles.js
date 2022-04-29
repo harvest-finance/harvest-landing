@@ -20,6 +20,14 @@ export const Box = styled.div`
     z-index: 10;
     color: white;
     font-size: 30px;
+    &:first-of-type{
+        background: rgb(47,103,212);
+        background: linear-gradient(90deg, rgba(47,103,212,1) 0%, rgba(49,126,242,1) 48%, rgba(54,144,254,1) 100%);
+    }
+    &:last-of-type{
+        background: rgb(49,172,187);
+        background: linear-gradient(180deg, rgba(49,172,187,1) 24%, rgba(179,120,164,1) 50%, rgba(230,111,96,1) 82%);
+    }
     @media(min-width: 768px){
         font-size: 35px;
         padding: 110px 40px 180px 40px;

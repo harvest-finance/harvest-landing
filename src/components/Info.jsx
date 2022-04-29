@@ -1,5 +1,6 @@
 import {Column, FarmImage, HarvestProjects, InfoText, InfoContainer, Button, HarvestCircle, HarvestProject, Icon, Money, MoneyImg, Vector, Arrows} from '../styles/infoStyles'
 import Image from 'next/image'
+import Img from './Img'
 import projects from '../consts/projects'
 
 export default function Info(){
@@ -29,7 +30,7 @@ export default function Info(){
                                         <div className='relativeContainer'>
                                             <HarvestProject>
                                                 <Icon className='centerFlex' style={background}>
-                                                    <Image src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name} priority={true}/>
+                                                    <Img src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name}/>
                                                 </Icon>
                                                 {name}
                                             </HarvestProject>
@@ -41,13 +42,13 @@ export default function Info(){
                                 )
                             }
                             <Arrows>
-                                <Image src="/down_arrow.svg" width={18} height={10} alt="arrow down" priority={true}/>
-                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.7}} alt="arrow down" priority={true}/>
-                                <Image src="/down_arrow.svg" width={18} height={10} style={{opacity: 0.4}} alt="arrow down" priority={true}/>
+                                <img src="/down_arrow.svg" alt="arrow down"/>
+                                <img src="/down_arrow.svg" style={{opacity: 0.7}} alt="arrow down"/>
+                                <img src="/down_arrow.svg" style={{opacity: 0.4}} alt="arrow down"/>
                             </Arrows>
                             <Money className='centerFlex'>
                                 <MoneyImg className='centerFlex'>
-                                    <Image src="/money.png" width={47} height={43} alt="money" priority={true} quality={60}/>
+                                    <Image src="/money.png" width={47} height={43} alt="money" priority={true}/>
                                 </MoneyImg>
                             </Money>
                         </div>
