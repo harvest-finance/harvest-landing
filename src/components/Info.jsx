@@ -21,7 +21,7 @@ export default function Info(){
                     <HarvestProjects>
                         <div className='relativeContainer'>
                             <HarvestCircle>
-                                <Image src="/harvest_icon.png" width={50} height={50} alt="harvest growth" priority={true} quality={60}/>
+                                <Image src="/harvest_icon.svg" width={50} height={50} alt="harvest growth" priority={true} quality={60}/>
                                 <span>Harvest</span>
                             </HarvestCircle>
                             {
@@ -48,7 +48,7 @@ export default function Info(){
                             </Arrows>
                             <Money className='centerFlex'>
                                 <MoneyImg className='centerFlex'>
-                                    <Image src="/money.png" width={47} height={43} alt="money" priority={true}/>
+                                    <Image src="/money.svg" width={47} height={43} alt="money" priority={true}/>
                                 </MoneyImg>
                             </Money>
                         </div>
