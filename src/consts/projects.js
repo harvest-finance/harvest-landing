@@ -3,7 +3,7 @@ const projects = [
         name: 'Compound',
         imgUrl: 'compound',
         dimensions: {img: {width: 16, height: 17}, vector: {width: 46, height: 22}},
-        background: {backgroundColor: ' rgba(0, 211, 149, 0.13)'},
+        background: {backgroundColor: 'rgba(0, 211, 149, 0.13)'},
         position: [{left: '-30px', top: '70%'}, {right: '10%', top: '-25px'}]
     },
     {

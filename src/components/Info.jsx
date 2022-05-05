@@ -2,6 +2,7 @@ import {Column, FarmImage, HarvestProjects, InfoText, InfoContainer, Button, Har
 import Image from 'next/image'
 import Img from './Img'
 import projects from '../consts/projects'
+import {startEarning} from '../consts/links'
 
 export default function Info(){
     return(
@@ -11,7 +12,7 @@ export default function Info(){
                     EARN YIELD ON YOUR CRYPTO
                 </h1>
                 <InfoText>Put your idle assets to work.</InfoText>
-                <Button href="https://app.harvest.finance/">
+                <Button href={startEarning}>
                     START EARNING
                     <Image src="/arrow_right.png" width={13} height={13} alt="Arrow right" priority={true}/>
                 </Button>

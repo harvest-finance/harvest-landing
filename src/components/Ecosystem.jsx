@@ -3,6 +3,7 @@ import {InfoText} from '../styles/infoStyles'
 import Image from 'next/image'
 import Img from './Img'
 import trustedPlatforms from '../consts/trusted_platforms'
+import {startEarning} from '../consts/links'
 
 export default function Ecosystem(){
     return(
@@ -10,7 +11,7 @@ export default function Ecosystem(){
             <TextColumn>
                 <Title> HARVEST ECOSYSTEM </Title>
                 <InfoText> 30+ Trusted Platforms </InfoText>
-                <EarningButton href="https://app.harvest.finance/">
+                <EarningButton href={startEarning}>
                     START EARNING
                     <Image src="/arrow_right.svg" width={13} height={13} alt="arrow right"/>
                 </EarningButton>

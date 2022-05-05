@@ -1,5 +1,6 @@
 import {Container, Box, Icon, Background, Title, Text, Button} from '../styles/farmBoxesStyles'
 import Img from './Img'
+import {exploreFarm, exploreOpportunites} from '../consts/links'
 
 export default function FarmBoxes(){
     return(
@@ -17,7 +18,7 @@ export default function FarmBoxes(){
                 <Text>
                     $FARM is the heart of Harvest. It allows you to capitalize on the growth and success of our platform.
                 </Text>
-                <Button href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics">Explore FARM</Button>
+                <Button href={exploreFarm}>Explore FARM</Button>
             </Box>
             <Box>
                 <Background>
@@ -32,7 +33,7 @@ export default function FarmBoxes(){
                 <Text>
                     Harvest is platform made for and run by the community. Join us on this adventure and find your place!
                 </Text>
-                <Button href="https://harvest.finance/work">Explore Opportunites</Button>
+                <Button href={exploreOpportunites}>Explore Opportunites</Button>
             </Box>
         </Container>
     )

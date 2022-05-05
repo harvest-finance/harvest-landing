@@ -30,10 +30,10 @@ export default function Home() {
           <Info/>
           <Services/>
           <Earn/>
-          <Companies title="AS SEEN ON" data={seen}/>
+          <Companies title="AS SEEN ON" data={seen} id="asSeenOn"/>
           <Video/>
           <Ecosystem/>
-          <Companies title="AUDITED BY" data={audited} grid/>
+          <Companies title="AUDITED BY" data={audited} grid id="auditedBy"/>
           <FarmBoxes/>
         </main>
       </div>
