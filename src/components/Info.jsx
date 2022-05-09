@@ -34,7 +34,7 @@ export default function Info(){
                                                 </Icon>
                                                 {name}
                                             </HarvestProject>
-                                            <Vector style={{...position[1]}}>
+                                            <Vector style={{...position[1], ...dimensions.vector}}>
                                                 <LazyImg src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector"/>
                                             </Vector>
                                         </div>
