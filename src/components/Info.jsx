@@ -1,8 +1,7 @@
 import {Column, FarmImage, HarvestProjects, InfoText, InfoContainer, Button, HarvestCircle, HarvestProject, Icon, Money, MoneyImg, Vector, Arrows} from '../styles/infoStyles'
-import Image from 'next/image'
-import Img from './Img'
 import projects from '../consts/projects'
 import {startEarning} from '../consts/links'
+import MyImg, {LazyImg} from './MyImg'
 
 export default function Info(){
     return(
@@ -14,7 +13,7 @@ export default function Info(){
                 <InfoText>Put your idle assets to work.</InfoText>
                 <Button href={startEarning}>
                     START EARNING
-                    <Image src="/arrow_right.png" width={13} height={13} alt="Arrow right" priority={true}/>
+                    <MyImg src="/arrow_right.png" width={13} height={13} alt="Arrow right"/>
                 </Button>
             </Column>
             <Column>
@@ -22,7 +21,7 @@ export default function Info(){
                     <HarvestProjects>
                         <div className='relativeContainer'>
                             <HarvestCircle>
-                                <Image src="/harvest_icon.svg" width={50} height={50} alt="harvest growth" priority={true} quality={60}/>
+                                <MyImg src="/harvest_icon.svg" width={50} height={50} alt="harvest growth"/>
                                 <span>Harvest</span>
                             </HarvestCircle>
                             {
@@ -31,32 +30,32 @@ export default function Info(){
                                         <div className='relativeContainer'>
                                             <HarvestProject>
                                                 <Icon className='centerFlex' style={background}>
-                                                    <Img src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name}/>
+                                                    <LazyImg src={`/projects/${imgUrl}.svg`} {...dimensions.img} alt={name}/>
                                                 </Icon>
                                                 {name}
                                             </HarvestProject>
                                             <Vector style={{...position[1]}}>
-                                                <Image src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector"/>
+                                                <LazyImg src={`/projects/${imgUrl}-vector.svg`} {...dimensions.vector} alt="vector"/>
                                             </Vector>
                                         </div>
                                     </div>
                                 )
                             }
                             <Arrows>
-                                <img src="/down_arrow.svg" alt="arrow down"/>
-                                <img src="/down_arrow.svg" style={{opacity: 0.7}} alt="arrow down"/>
-                                <img src="/down_arrow.svg" style={{opacity: 0.4}} alt="arrow down"/>
+                                <MyImg src="/down_arrow.svg" alt="arrow down"/>
+                                <MyImg src="/down_arrow.svg" style={{opacity: 0.7}} alt="arrow down"/>
+                                <MyImg src="/down_arrow.svg" style={{opacity: 0.4}} alt="arrow down"/>
                             </Arrows>
                             <Money className='centerFlex'>
                                 <MoneyImg className='centerFlex'>
-                                    <Image src="/money.svg" width={47} height={43} alt="money" priority={true}/>
+                                    <MyImg src="/money.svg" width={47} height={43} alt="money" />
                                 </MoneyImg>
                             </Money>
                         </div>
                     </HarvestProjects>
                 </div>
                 <FarmImage>
-                    <Image src="/field.jpeg" layout='fill' objectFit="cover" alt="field" priority={true} quality={100}/>
+                    <MyImg src="/field.jpeg" layout="fill"/>
                 </FarmImage>
             </Column>
         </InfoContainer>

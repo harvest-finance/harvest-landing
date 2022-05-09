@@ -1,8 +1,7 @@
 import {Container, Title, InfoPart, List, ListItem, Icon, BarsContainer, BarsBg, BarsLegend, Circle, Bars, Bar, Column, Fill, Apy} from '../styles/earnStyles'
 import {InfoText} from '../styles/infoStyles'
-import Image from 'next/image'
+import MyImg, {LazyImg} from './MyImg'
 import { useInView } from 'react-intersection-observer'
-import Img from './Img'
 
 export default function Earn(){
     const { ref, inView } = useInView({
@@ -14,7 +13,7 @@ export default function Earn(){
         <Container>
             <BarsContainer ref={ref}>
                 <BarsBg>
-                    <Image src="/plant_bg.svg" width={461} height={461} alt="plant"/>
+                    <MyImg src="/plant_bg.svg" alt="plant"/>
                 </BarsBg>
                 <BarsLegend>
                     <div className='centerFlex'><Circle/>Yield without Harvest</div>
@@ -45,25 +44,25 @@ export default function Earn(){
                 <List>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Img src="/compounding.svg" width={30} height={30} alt="Auto-compounding"/>
+                            <LazyImg src="/compounding.svg" width={30} height={30} alt="Auto-compounding"/>
                         </Icon>
                         Auto-compounding
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Img src="/auto_rewards.svg" width={30} height={30} alt="Auto-harvested rewards"/>
+                            <LazyImg src="/auto_rewards.svg" width={30} height={30} alt="Auto-harvested rewards"/>
                         </Icon>
                         Auto-harvested rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Img src="/farm_rewards.svg" width={30} height={30} alt="FARM Rewards"/>
+                            <LazyImg src="/farm_rewards.svg" width={30} height={30} alt="FARM Rewards"/>
                         </Icon>
                         FARM Rewards
                     </ListItem>
                     <ListItem>
                         <Icon className='centerFlex'>
-                            <Img src="/token_rewards.svg" width={30} height={30} alt="Unique DAO token rewards"/>
+                            <LazyImg src="/token_rewards.svg" width={30} height={30} alt="Unique DAO token rewards"/>
                         </Icon>
                         Unique DAO token rewards
                     </ListItem>

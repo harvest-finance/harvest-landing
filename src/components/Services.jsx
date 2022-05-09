@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+import MyImg from './MyImg'
 
 const Container = styled.div`
     display: flex;
@@ -39,7 +39,7 @@ const Service = styled.div`
             font-size: 1.5rem;
         }
         &:nth-of-type(3){
-            & span{
+            & img{
                 display: none!important;
             }
         }
@@ -50,19 +50,19 @@ export default function Services(){
     return(
         <Container>
             <Service className='centerFlex'>
-                <Image src="/bancor.svg" width={25} height={39} alt="Bancor" priority={true}/>
+                <MyImg src="/bancor.svg" width={25} height={39} alt="Bancor"/>
                 <p>Bancor</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/binance.svg" width={25} height={39} alt="Binance" priority={true}/>
+                <MyImg src="/binance.svg" width={25} height={39} alt="Binance"/>
                 <p>Binance</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/coinbase.svg" width={25} height={39} alt="Coinbase" priority={true}/>
+                <MyImg src="/coinbase.svg" width={25} height={39} alt="Coinbase"/>
                 <p>Coinbase</p>
             </Service>
             <Service className='centerFlex'>
-                <Image src="/crypto_com.svg" width={25} height={39} alt="Crypto.com" priority={true}/>
+                <MyImg src="/crypto_com.svg" width={25} height={39} alt="Crypto.com"/>
                 <p>crypto.com</p>
             </Service>
         </Container>

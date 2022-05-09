@@ -1,6 +1,7 @@
 import ToogleNav from './ToogleNav'
 import {NavContainer, Logo, Icon, LogoText} from '../../styles/navbarStyles'
 import Link from 'next/link';
+import MyImg from '../MyImg'
 
 function Nav(){
     return(
@@ -10,7 +11,7 @@ function Nav(){
                 <span className='forScreenReaders'>Homepage</span>
                     <Logo>
                         <Icon className='centerFlex'>
-                            <img src="/Farm_logo.svg" style={{width: '32px', height: '28px'}} alt="Harvest logo"/>
+                            <MyImg src="/Farm_logo.svg" width={32} height={28} alt="Harvest logo"/>
                         </Icon>
                         <LogoText>Harvest</LogoText>
                     </Logo>

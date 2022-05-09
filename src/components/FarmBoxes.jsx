@@ -1,5 +1,5 @@
 import {Container, Box, Icon, Background, Title, Text, Button} from '../styles/farmBoxesStyles'
-import Img from './Img'
+import {LazyImg} from './MyImg'
 import {exploreFarm, exploreOpportunites} from '../consts/links'
 
 export default function FarmBoxes(){
@@ -7,10 +7,10 @@ export default function FarmBoxes(){
         <Container>
             <Box>
                 <Background>
-                    <Img src="/farm_token.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
+                    <LazyImg src="/farm_token.svg" layout='fill' alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Img src="/tractor.svg" width={30} height={30} alt="tractor"/>
+                    <LazyImg src="/tractor.svg" width={30} height={30} alt="tractor"/>
                 </Icon>
                 <Title>
                     FARM TOKEN
@@ -22,10 +22,10 @@ export default function FarmBoxes(){
             </Box>
             <Box>
                 <Background>
-                    <Img src="/contribute.svg" layout='fill' objectFit="cover" objectPosition="center bottom" alt="farm background"/>
+                    <LazyImg src="/contribute.svg" layout='fill' alt="farm background"/>
                 </Background>
                 <Icon className='centerFlex'>
-                    <Img src="/vegetables.svg" width={30} height={30} alt="vegetables in the box"/>
+                    <LazyImg src="/vegetables.svg" width={30} height={30} alt="vegetables in the box"/>
                 </Icon>
                 <Title>
                     CONTRIBUTE AND EARN

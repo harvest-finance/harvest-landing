@@ -47,10 +47,11 @@ export const Text = styled.p`
 export const DefaultService = styled.a`
     display: block;
     border-radius: 18px;
+    width: 100%;
     max-width: 150px;
     cursor: pointer;
     @media(min-width: 768px){
-        max-width: unset;
+        max-width: 230px;
         &:hover{
             filter: invert(92%) sepia(6%) saturate(126%) hue-rotate(142deg) brightness(89%) contrast(85%);
         }

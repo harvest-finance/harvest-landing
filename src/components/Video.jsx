@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {Container, Frame, PosterImage, PlayButton, IframeContainer, Effect} from '../styles/videoStyles'
-import Image from 'next/image'
+import MyImg from './MyImg'
 
 export default function Video(){
     const [play, setPlay] = useState(false);
@@ -14,12 +14,12 @@ export default function Video(){
             <Frame>
                 <IframeContainer>
                     <PosterImage play={play}>
-                        <Image src="/video_bg.png" layout="fill" objectFit="cover" objectPosition="center" alt="video background" priority={true}quality={60}/>
+                        <MyImg src="/video_bg.png" layout="fill" alt="video background"/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
                         <span className='forScreenReaders'>Play Video</span>
-                        <Effect className='relativeContainer'>
-                            <Image src="/play.png" width={78} height={78} alt="play button"/>
+                        <Effect className=''>
+                            <MyImg src="/play.png" alt="play button"/>
                         </Effect>
                     </PlayButton>
                     <iframe
