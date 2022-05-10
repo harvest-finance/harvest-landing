@@ -11,7 +11,7 @@ function Nav(){
                 <span className='forScreenReaders'>Homepage</span>
                     <Logo>
                         <Icon className='centerFlex'>
-                            <MyImg src="/Farm_logo.svg" width={32} height={28} alt="Harvest logo"/>
+                            <MyImg src="/Farm_logo.svg" width={32} height={28} alt="Harvest logo" preload/>
                         </Icon>
                         <LogoText>Harvest</LogoText>
                     </Logo>

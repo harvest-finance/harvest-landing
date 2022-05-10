@@ -78,7 +78,7 @@ export const FarmImage = styled.div`
     top: 50%;
     border-radius: 50px 50px 0 0;
     overflow: hidden;
-    background-image: url("/field-placeholder.webp"); /* The image used */
+    background-image: url("/static_assets/field-placeholder.webp"); /* The image used */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

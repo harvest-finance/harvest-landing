@@ -1,12 +1,17 @@
+import { useState, useRef } from 'react'
 import {Container, Title, InfoPart, List, ListItem, Icon, BarsContainer, BarsBg, BarsLegend, Circle, Bars, Bar, Column, Fill, Apy} from '../styles/earnStyles'
 import {InfoText} from '../styles/infoStyles'
 import MyImg, {LazyImg} from './MyImg'
-import { useInView } from 'react-intersection-observer'
+import {useIntersection} from '../utlis/intersectionObserver'
 
 export default function Earn(){
-    const { ref, inView } = useInView({
-        threshold: 0.8,
-        triggerOnce: true
+    const [inView, setIsInView] = useState(false);
+    const ref = useRef();
+    useIntersection(ref, () => {
+        setIsInView(true);
+    }, {
+        rootMargin: '0px',
+        threshold: '0.7'
     });
 
     return(

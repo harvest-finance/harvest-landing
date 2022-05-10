@@ -21,7 +21,7 @@ export default function Info(){
                     <HarvestProjects>
                         <div className='relativeContainer'>
                             <HarvestCircle>
-                                <MyImg src="/harvest_icon.svg" width={50} height={50} alt="harvest growth"/>
+                                <MyImg src="/harvest_icon.svg" width={50} height={50} alt="harvest growth" preload/>
                                 <span>Harvest</span>
                             </HarvestCircle>
                             {
@@ -55,7 +55,7 @@ export default function Info(){
                     </HarvestProjects>
                 </div>
                 <FarmImage>
-                    <MyImg src="/field.jpeg" layout="fill"/>
+                    <MyImg src="/field.webp" layout="fill" preload/>
                 </FarmImage>
             </Column>
         </InfoContainer>

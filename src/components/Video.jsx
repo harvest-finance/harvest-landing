@@ -14,7 +14,7 @@ export default function Video(){
             <Frame>
                 <IframeContainer>
                     <PosterImage play={play}>
-                        <MyImg src="/video_bg.png" layout="fill" alt="video background"/>
+                        <MyImg src="/video_bg.webp" layout="fill" alt="video background"/>
                     </PosterImage>
                     <PlayButton onClick={playVideo} play={play}>
                         <span className='forScreenReaders'>Play Video</span>

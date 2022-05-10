@@ -1,23 +1,32 @@
-import { useState } from "react"
-import { useInView } from 'react-intersection-observer'
+import Head from "next/head"
+import { useState, useRef } from "react"
 import styles from '../styles/imageStyles.module.css'
 import styled from 'styled-components'
+import {useIntersection} from '../utlis/intersectionObserver'
 
 const isProduction = process.env.NEXT_PUBLIC_ENV === 'production';
 
 export default function MyImg(props){
-    const {src, layout, width, height, lazy} = props;
+    const {src, layout, width, height, lazy, preload} = props;
     const [loaded, setLoaded] = useState(lazy ? false : true);
-    const source = isProduction ? `.${src}` : src;
+    const source = isProduction ? `./static_assets${src}` : `/static_assets${src}`;
     const loadingFinished = () => {
         setLoaded(true);
     }
     return(
-        <img
-            src={source}
-            className={layout === 'fill' ? styles.fill : ''}
-            style={!lazy ? {width: width ? `${width}px` : '100%', height: height ? `${height}px` : '100%'} : {opacity: loaded ? 1 : 0, transition: 'opacity 0.2s ease-in-out'}}
-            onLoad={lazy ? loadingFinished : null}/>
+        <>
+            { preload &&
+            <Head>
+                <link rel="preload" as="image" href={source} />
+            </Head>
+
+            }
+            <img
+                src={source}
+                className={layout === 'fill' ? styles.fill : ''}
+                style={!lazy ? {width: width ? `${width}px` : '100%', height: height ? `${height}px` : '100%'} : {opacity: loaded ? 1 : 0, transition: 'opacity 0.2s ease-in-out'}}
+                onLoad={lazy ? loadingFinished : null}/>
+        </>
     )
 }
 
@@ -45,8 +54,10 @@ const LazyImage = styled.div`
 export function LazyImg({...props}){
     const {width, height, layout} = props;
     const fill = layout === 'fill';
-    const { ref, inView } = useInView({
-        triggerOnce: true
+    const [inView, setIsInView] = useState(false);
+    const ref = useRef();
+    useIntersection(ref, () => {
+        setIsInView(true);
     });
     return(
         <LazyImage
