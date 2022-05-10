@@ -1,9 +1,12 @@
 ## Build static website
 
-1. Create .env.local file on the server with var NEXT_PUBLIC_ENV=production
 
-2. Run "yarn run build"
+1. Install NextJs framework with all dependencies
 
-3. "Copy all files from "out" direcotry"
+2. Copy all static assets to folder "public"/static_assets in projects root directory
 
-* NextJs famework required to build new website after changes
+3. Create .env.local file on the with var NEXT_PUBLIC_ENV=production
+
+4. Run "yarn run build"
+
+5. "Copy all files from "out" direcotry"
