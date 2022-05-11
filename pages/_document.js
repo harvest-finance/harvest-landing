@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
                   font-family: 'Work Sans';
                   font-style: normal;
                   font-weight: 400;
+                  font-display: swap;
                   src: local(''),
                       url('/static_assets/fonts/workSans.woff2') format('woff2'),
                       url('/static_assets/fonts/workSans.woff2') format('woff');
