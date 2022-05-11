@@ -6,10 +6,18 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-            <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"/>
-            <link rel="icon" href="/favicon.png" />
+            <link rel="icon" href="/static_assets/favicon.png" />
+            <link rel="preload" href="/static_assets/fonts/workSans.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
+            <style dangerouslySetInnerHTML={{__html: `
+                @font-face {
+                  font-family: 'Work Sans';
+                  font-style: normal;
+                  font-weight: 400;
+                  src: local(''),
+                      url('/static_assets/fonts/workSans.woff2') format('woff2'),
+                      url('/static_assets/fonts/workSans.woff2') format('woff');
+                }
+            `}}/>
         </Head>
         <body>
           <Main />
