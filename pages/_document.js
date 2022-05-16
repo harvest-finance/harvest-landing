@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
                   font-display: swap;
                   src: local(''),
                       url('/static_assets/fonts/workSans.woff2') format('woff2'),
-                      url('/static_assets/fonts/workSans.woff2') format('woff');
+                      url('/static_assets/fonts/workSans.woff') format('woff');
                 }
             `}}/>
         </Head>
