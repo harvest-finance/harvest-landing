@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <link rel="icon" href="/static_assets/favicon.png" />
+          <link rel="icon" href="/static_assets/favicon.ico"/>
             <link rel="preload" href="/static_assets/fonts/workSans.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
             <style dangerouslySetInnerHTML={{__html: `
                 @font-face {

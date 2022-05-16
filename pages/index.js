@@ -18,7 +18,6 @@ export default function Home() {
           <title>Harvest: Earn Passive Yield on Your Crypto</title>
           <meta name="description" content="The #1 place in DeFi to put your idle crypto assets to work in 'set and forget' fashion!" />
           <link rel="preload" as="image" href="/static_assets/field-placeholder.webp"/>
-          <link rel="icon" href="/static_assets/favicon.ico"/>
           <meta property="og:image" content="https://adamblicharz.com/static_assets/preview.jpeg"/>
           <meta property="twitter:image" content="https://adamblicharz.com/static_assets/preview.jpeg"/>
           <meta name="twitter:title" content="Harvest: Earn Passive Yield on Your Crypto" />
