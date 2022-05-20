@@ -22,7 +22,7 @@ export const companies = {
 }
 
 export const exploreFarm = 'https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics';
-export const exploreOpportunites = 'https://harvest.finance/work';
+export const exploreOpportunites = 'https://app.harvest.finance/work';
 
 export const media = {
     twitter: 'https://twitter.com/harvest_finance',
