@@ -1,0 +1,12 @@
+{
+    "apps": [
+      {
+        "name": "landing-ui",
+        "script": "yarn start",
+        "watch": false,
+        "env": {
+          "NODE_ENV": "production"
+        }
+      }
+    ]
+}
