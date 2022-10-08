@@ -31,7 +31,7 @@ app.prepare().then(() => {
     }
   ).listen(httpsPort, (err) => {
     if (err) throw err;
-    console.log(`> HTTPS Ready on port ${httpsPort}`);
+    console.log(`> Server started on port ${httpsPort}`);
   });
 });
 
