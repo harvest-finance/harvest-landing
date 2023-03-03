@@ -15,8 +15,8 @@ const trusted_platforms = [
         attr: {rowRight: true}
     },
     {
-        name: 'BSC',
-        imgUrl: 'bsc.svg',
+        name: 'Idle',
+        imgUrl: 'idle.svg',
         attr: {more: true}
     },
     {
